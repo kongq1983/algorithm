@@ -10,7 +10,8 @@ package com.kq.algorithm.binarysorttree;
 public class BinarySortTreeTest {
 
     public static void main(String[] args) {
-        testAdd();
+//        testAdd();
+        testDelete();
     }
 
     public static void testAdd(){
@@ -24,5 +25,20 @@ public class BinarySortTreeTest {
 
         tree.printRoot();
     }
+
+    public static void testDelete(){
+        BinarySortTree tree = new BinarySortTree();
+        tree.addBST(1);
+        tree.addBST(3);
+        tree.addBST(5);
+        tree.addBST(7);
+        tree.addBST(9);
+        tree.printRoot();
+        tree.deleteBST(7);
+
+        tree.printRoot();
+    }
+
+
 
 }

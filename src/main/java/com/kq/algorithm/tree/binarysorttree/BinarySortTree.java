@@ -1,6 +1,6 @@
-package com.kq.algorithm.binarysorttree;
+package com.kq.algorithm.tree.binarysorttree;
 
-import com.kq.algorithm.binarysorttree.dto.Node;
+import com.kq.algorithm.tree.binarysorttree.dto.Node;
 
 /**
  * BinarySortTree

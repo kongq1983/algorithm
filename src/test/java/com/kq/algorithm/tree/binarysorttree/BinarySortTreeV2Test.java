@@ -1,4 +1,4 @@
-package com.kq.algorithm.binarysorttree;
+package com.kq.algorithm.tree.binarysorttree;
 
 import org.junit.Before;
 import org.junit.Test;

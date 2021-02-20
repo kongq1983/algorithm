@@ -1,6 +1,6 @@
 package com.kq.algorithm.otherdemo;
 
-import com.kq.algorithm.binarysorttree.dto.Node;
+import com.kq.algorithm.tree.binarysorttree.dto.Node;
 
 /**
  * ReferenceDemo

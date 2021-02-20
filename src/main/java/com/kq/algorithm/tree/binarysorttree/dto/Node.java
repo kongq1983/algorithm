@@ -1,4 +1,4 @@
-package com.kq.algorithm.binarysorttree.dto;
+package com.kq.algorithm.tree.binarysorttree.dto;
 
 /**
  * Node

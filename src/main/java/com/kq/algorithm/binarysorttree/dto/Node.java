@@ -12,6 +12,8 @@ public class Node {
     private int value;
     private Node left;
     private Node right;
+    /** v2版本开始增加上去 */
+    private Node parent;
 
     public Node(){
 
@@ -19,6 +21,12 @@ public class Node {
 
     public Node(int value) {
         this(value,null,null);
+    }
+
+    /** since add v2 */
+    public Node(Node parent, int value) {
+        this.value = value;
+        this.parent = parent;
     }
 
     public Node(int value, Node left, Node right) {
@@ -51,6 +59,16 @@ public class Node {
         this.right = right;
     }
 
+    public Node getParent() {
+        return parent;
+    }
+
+    public void setParent(Node parent) {
+        this.parent = parent;
+    }
+
+    /** toString,不要parent，否則死循環 */
+    @Override
     public String toString() {
         return "Node{" +
                 "value=" + value +

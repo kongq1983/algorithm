@@ -46,7 +46,8 @@ public class BinarySortTreeV2 {
 
 
     public void deleteBST(int key) {
-        deleteBST(root,key);
+        boolean result = deleteBST(root,key);
+        System.out.println("delete key="+key+", result="+result);
     }
 
     private boolean deleteBST(Node node,int key) {

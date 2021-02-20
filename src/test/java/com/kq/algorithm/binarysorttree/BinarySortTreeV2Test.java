@@ -86,6 +86,8 @@ public class BinarySortTreeV2Test {
         tree.printRoot();
 
         tree.middleIter();
+
+        tree.deleteBST(26);
     }
 
 }

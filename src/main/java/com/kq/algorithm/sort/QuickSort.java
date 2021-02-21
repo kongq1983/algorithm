@@ -5,6 +5,20 @@ import java.util.Arrays;
 /**
  * QuickSort
  * 快速排序
+ * 选择pivot = array[0]
+ * left=array[0]  right=array[len-1]
+ * 从high往左边先处理，如果 array[right] > pivot 则right-- (右边大) 如果array[right] < pivot  right停留在当前位置
+ * 把right当前位置的值，赋给array[left] = array[right]  同时left++
+ *
+ * 然后处理从左往右，如果 array[left] < pivot 则left++ (左边小) 如果array[left] > pivot 则left停留在当前位置
+ * 把left当前位置的值，赋给array[right] = array[left]  同时right--
+ *
+ * 最终left和right在同个位置的时候 把pivot赋给当前位置  array[left]=pivot
+ *
+ * 然后递归遍历
+ * quickSort(array,low,left-1);  //pivot的左边
+ * quickSort(array,left+1,high); //pivot的右边
+ *
  * @author kq
  * @date 2021/2/20 23:17
  * @since 1.0.0

@@ -19,6 +19,25 @@ import java.util.Arrays;
  * quickSort(array,low,left-1);  //pivot的左边
  * quickSort(array,left+1,high); //pivot的右边
  *
+ * 示例:
+ * [6, 1, 25, 16, 2, 8, 18]-----
+ * right-to-left:[2, 1, 25, 16, 2, 8, 18]  left=1,right=4
+ * left-to-right:[2, 1, 25, 16, 25, 8, 18]  left=2,right=3
+ * right-to-left:[2, 1, 25, 16, 25, 8, 18]  left=2,right=2
+ * left-to-right:[2, 1, 25, 16, 25, 8, 18]  left=2,right=2
+ * [2, 1, 6, 16, 25, 8, 18]
+ * right-to-left:[1, 1, 6, 16, 25, 8, 18]  left=1,right=1
+ * left-to-right:[1, 1, 6, 16, 25, 8, 18]  left=1,right=1
+ * [1, 2, 6, 16, 25, 8, 18]
+ * right-to-left:[1, 2, 6, 8, 25, 8, 18]  left=4,right=5
+ * left-to-right:[1, 2, 6, 8, 25, 25, 18]  left=4,right=4
+ * [1, 2, 6, 8, 16, 25, 18]
+ * right-to-left:[1, 2, 6, 8, 16, 18, 18]  left=6,right=6
+ * left-to-right:[1, 2, 6, 8, 16, 18, 18]  left=6,right=6
+ * [1, 2, 6, 8, 16, 18, 25]
+ * [1, 2, 6, 8, 16, 18, 25]-----
+ *
+ * *
  * @author kq
  * @date 2021/2/20 23:17
  * @since 1.0.0
